@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/white"
+            android:id="@+id/edt_ma_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã thành viên"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_ten_tv"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên thành viên"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@color/white"
+            android:id="@+id/edt_nam_sinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Năm sinh"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_save_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:drawableStart="@drawable/ic_save"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:drawableStart="@drawable/ic_cancel"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

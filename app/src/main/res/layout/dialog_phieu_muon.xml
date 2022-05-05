@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_ma_phieu_muon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã phiếu mượn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_ma_thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_ma_sach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_ngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày: "
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_tien_thue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiền thuê: "
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/chk_tra_sach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã trả sách"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/btn_save_phieu_muon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:drawableStart="@drawable/ic_save"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_cancel_phieu_muon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:drawableStart="@drawable/ic_cancel"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_phieu_muon"
+            android:icon="@drawable/ic_home"
+            android:title="Quản lý phiếu mượn"/>
+        <item android:id="@+id/nav_loai_sach"
+            android:icon="@drawable/ic_catebook"
+            android:title="Quản lý loại sách"/>
+        <item android:id="@+id/nav_sach"
+            android:icon="@drawable/ic_books"
+            android:title="Quản lý sách"/>
+        <item android:id="@+id/nav_thanh_vien"
+            android:icon="@drawable/ic_customer"
+            android:title="Quản lý thành viên"/>
+
+        <item android:title="Thống kê">
+            <menu>
+                <item android:id="@+id/sub_top"
+                    android:icon="@drawable/ic_top"
+                    android:title="10 sách mượn nhiều nhất"/>
+                <item android:id="@+id/sub_doanh_thu"
+                    android:icon="@drawable/ic_money"
+                    android:title="Doanh thu"/>
+            </menu>
+        </item>
+
+        <item android:title="Người dùng">
+            <menu>
+                <item android:id="@+id/sub_add_user"
+                    android:icon="@drawable/ic_adduser"
+                    android:visible="false"
+                    android:title="Thêm người dùng"/>
+                <item android:id="@+id/sub_pass"
+                    android:icon="@drawable/ic_pass"
+                    android:title="Đổi mật khẩu"/>
+                <item android:id="@+id/sub_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Đăng xuất"/>
+            </menu>
+        </item>
+    </group>
+</menu>
